@@ -57,7 +57,6 @@ Follow these steps to set up StreetEats on your local machine.
    ```bash
    npm run dev
 
-
 Usage
 Here's how you can make the most of StreetEats:
 
