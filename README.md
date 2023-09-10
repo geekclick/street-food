@@ -81,4 +81,4 @@ next.config.js: Next.js configuration
 
 
 License
-StreetEats is licensed under the Apache License.
+StreetEats is licensed under the MIT License.
