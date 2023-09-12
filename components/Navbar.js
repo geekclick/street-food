@@ -1,5 +1,6 @@
 "use client"
 import React from 'react'
+import Link from 'next/link'
 
 const Navbar = () => {
     function toggleMenu() {
@@ -26,20 +27,20 @@ const Navbar = () => {
 
                 <div id='menuItem' className="menuItems hide fixed right-0 w-full h-full top-0">
                     <ul className='itemList text-2xl mt-40 font-bold text-green-500'>
-                        <li><a href="/">Home</a></li>
-                        <li><a href="/about">About</a></li>
-                        <li><a href="/contact">Contact</a></li>
-                        <li><a href="/services">Services</a></li>
+                        <li><Link href="/">Home</Link></li>
+                        <li><Link href="/about">About</Link></li>
+                        <li><Link href="/contact">Contact</Link></li>
+                        <li><Link href="/services">Services</Link></li>
                     </ul>
                 </div>
                 <div className='md:flex hidden justify-between gap-12'>
                     <ul className='text-md flex flex-row pt-2 gap-8 font-bold'>
-                        <li><a href="/">Home</a></li>
-                        <li><a href="/about">About</a></li>
-                        <li><a href="/contact">Contact</a></li>
-                        <li><a href="/services">Services</a></li>
+                        <li><Link href="/">Home</Link></li>
+                        <li><Link href="/about">About</Link></li>
+                        <li><Link href="/contact">Contact</Link></li>
+                        <li><Link href="/services">Services</Link></li>
                     </ul>
-                    <button className='bg-white p-2.5 px-5 font-bold transition-all text-black cursor-pointer rounded-md text-sm'>Sign Up</button>
+                    <Link href='/signup'><button className='bg-white p-2.5 px-5 font-bold transition-all text-black cursor-pointer rounded-md text-sm'>Sign Up</button></Link>
                 </div>
             </nav>
         </>
