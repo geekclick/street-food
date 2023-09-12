@@ -377,7 +377,7 @@ const page = () => {
                     </div>
                     <div className="flex -mx-3">
                       <div className="w-full px-3 mb-5">
-                        <Link href='/'><button className="block w-full max-w-xs mx-auto my-2 bg-green-500 hover:bg-green-700 focus:bg-green-700 text-white rounded-lg px-3 py-3 font-semibold">Continue</button></Link>
+                        <button className="block w-full max-w-xs mx-auto my-2 bg-green-500 hover:bg-green-700 focus:bg-green-700 text-white rounded-lg px-3 py-3 font-semibold">Continue</button>
                         <Link href='/'><button className="md:hidden block w-full max-w-xs mx-auto my-2 bg-green-500 hover:bg-green-700 focus:bg-green-700 text-white rounded-lg px-3 py-3 font-semibold">Go Back</button></Link>
                       </div>
                     </div>
