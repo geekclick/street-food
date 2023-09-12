@@ -1,9 +1,10 @@
-import React from 'react'
+import React from "react";
+import Link from "next/link";
 
 const page = () => {
   return (
     <>
-      <section className='w-full bg-white'>
+      <section className="w-full bg-white">
         <div className="min-w-screen min-h-screen bg-white flex items-center justify-center px-5 py-5">
           <div
             className="bg-gray-100 text-gray-500 rounded-3xl shadow-xl shadow-black   w-full overflow-hidden"
@@ -11,6 +12,11 @@ const page = () => {
           >
             <div className="md:flex w-full">
               <div className="hidden md:block w-1/2 bg-green-500 py-10 px-10">
+                <Link href="/">
+                  <button>
+                    <i class="fa-solid fa-arrow-left py-3 p-3 rounded-full bg-white text-green-500"></i>
+                  </button>
+                </Link>
                 <svg
                   id="a87032b8-5b37-4b7e-a4d9-4dbfbe394641"
                   data-name="Layer 1"
@@ -62,7 +68,7 @@ const page = () => {
                     fill="#ccc"
                   />
                   <circle
-                    className='fill-green-500'
+                    className="fill-green-500"
                     id="a4813fcf-056e-4514-bb8b-e6506f49341f"
                     data-name="Ellipse 1"
                     cx="364.43401"
@@ -87,7 +93,7 @@ const page = () => {
                     fill="#ccc"
                   />
                   <circle
-                    className='fill-green-500'
+                    className="fill-green-500"
                     id="fcef55fc-4968-45b2-93bb-1a1080c85fc7"
                     data-name="Ellipse 2"
                     cx="225.46401"
@@ -105,7 +111,7 @@ const page = () => {
                     fill="#ccc"
                   />
                   <circle
-                    className='fill-green-500'
+                    className="fill-green-500"
                     id="e8fa0310-b872-4adf-aedd-0c6eda09f3b8"
                     data-name="Ellipse 3"
                     cx="225.46401"
@@ -114,13 +120,13 @@ const page = () => {
                     fill="#6c63ff"
                   />
                   <path
-                    className='fill-green-500'
+                    className="fill-green-500"
                     d="M660.69043,671.17188H591.62207a4.50493,4.50493,0,0,1-4.5-4.5v-24.208a4.50492,4.50492,0,0,1,4.5-4.5h69.06836a4.50491,4.50491,0,0,1,4.5,4.5v24.208A4.50492,4.50492,0,0,1,660.69043,671.17188Z"
                     transform="translate(-227.576 -76.46149)"
                     fill="#6c63ff"
                   />
                   <circle
-                    className='fill-green-500'
+                    className="fill-green-500"
                     id="e12ee00d-aa4a-4413-a013-11d20b7f97f7"
                     data-name="Ellipse 7"
                     cx="247.97799"
@@ -129,7 +135,7 @@ const page = () => {
                     fill="#6c63ff"
                   />
                   <circle
-                    className='fill-green-500'
+                    className="fill-green-500"
                     id="f58f497e-6949-45c8-be5f-eee2aa0f6586"
                     data-name="Ellipse 8"
                     cx="270.492"
@@ -138,7 +144,7 @@ const page = () => {
                     fill="#6c63ff"
                   />
                   <circle
-                    className='fill-green-500'
+                    className="fill-green-500"
                     id="b4d4939a-c6e6-4f4d-ba6c-e8b05485017d"
                     data-name="Ellipse 9"
                     cx="247.97799"
@@ -147,7 +153,7 @@ const page = () => {
                     fill="#6c63ff"
                   />
                   <circle
-                    className='fill-green-500'
+                    className="fill-green-500"
                     id="aff120b1-519b-4e96-ac87-836aa55663de"
                     data-name="Ellipse 10"
                     cx="270.492"
@@ -184,7 +190,12 @@ const page = () => {
                     transform="translate(-303.00873 15.2906) rotate(-5.62529)"
                     fill="#2f2e41"
                   />
-                  <circle cx="640.3925" cy="384.57375" r="24.56103" fill="#ffb8b8" />
+                  <circle
+                    cx="640.3925"
+                    cy="384.57375"
+                    r="24.56103"
+                    fill="#ffb8b8"
+                  />
                   <path
                     d="M849.55636,801.91945a4.47086,4.47086,0,0,1-4.415-3.69726c-6.34571-35.22559-27.08789-150.40528-27.584-153.59571a1.42684,1.42684,0,0,1-.01562-.22168v-8.58789a1.489,1.489,0,0,1,.27929-.87207l2.74024-3.83789a1.47845,1.47845,0,0,1,1.14355-.625c15.62207-.73242,66.78418-2.8789,69.25586.209h0c2.48242,3.10351,1.60547,12.50683,1.4043,14.36035l.00977.19336,22.98535,146.99512a4.51238,4.51238,0,0,1-3.71485,5.13476l-14.35644,2.36524a4.52127,4.52127,0,0,1-5.02539-3.09278c-4.44043-14.18847-19.3291-61.918-24.48926-80.38672a.49922.49922,0,0,0-.98047.13868c.25781,17.60546.88086,62.52343,1.0957,78.0371l.02344,1.6709a4.51811,4.51811,0,0,1-4.09277,4.53614l-13.84375,1.25781C849.83565,801.91359,849.695,801.91945,849.55636,801.91945Z"
                     transform="translate(-227.576 -76.46149)"
@@ -220,14 +231,17 @@ const page = () => {
               </div>
               <div className="w-full md:w-1/2 py-10 px-5 md:px-10">
                 <div className="text-center mb-10">
-                  <h1 className="font-bold text-3xl text-gray-900">REGISTER</h1>
-                  <p>Enter your information to register</p>
+                  <h1 className="font-bold text-3xl text-gray-900">SIGN UP</h1>
+                  <p>Enter your information to sign up</p>
                 </div>
                 <div>
                   <form action="/">
                     <div className="flex -mx-3">
                       <div className="w-1/2 px-3 mb-5">
-                        <label htmlFor="" className="text-xs font-semibold px-1">
+                        <label
+                          htmlFor=""
+                          className="text-xs font-semibold px-1"
+                        >
                           First name
                         </label>
                         <div className="flex">
@@ -242,7 +256,10 @@ const page = () => {
                         </div>
                       </div>
                       <div className="w-1/2 px-3 mb-5">
-                        <label htmlFor="" className="text-xs font-semibold px-1">
+                        <label
+                          htmlFor=""
+                          className="text-xs font-semibold px-1"
+                        >
                           Last name
                         </label>
                         <div className="flex">
@@ -259,7 +276,10 @@ const page = () => {
                     </div>
                     <div className="flex -mx-3">
                       <div className="w-full px-3 mb-5">
-                        <label htmlFor="" className="text-xs font-semibold px-1">
+                        <label
+                          htmlFor=""
+                          className="text-xs font-semibold px-1"
+                        >
                           Email
                         </label>
                         <div className="flex">
@@ -276,7 +296,10 @@ const page = () => {
                     </div>
                     <div className="flex -mx-3">
                       <div className="w-full px-3 mb-12">
-                        <label htmlFor="" className="text-xs font-semibold px-1">
+                        <label
+                          htmlFor=""
+                          className="text-xs font-semibold px-1"
+                        >
                           Password
                         </label>
                         <div className="flex">
@@ -293,7 +316,10 @@ const page = () => {
                     </div>
                     <div className="flex -mx-3">
                       <div className="w-full px-3 mb-12">
-                        <label htmlFor="" className="text-xs font-semibold px-1">
+                        <label
+                          htmlFor=""
+                          className="text-xs font-semibold px-1"
+                        >
                           Conform Password
                         </label>
                         <div className="flex">
@@ -310,7 +336,10 @@ const page = () => {
                     </div>
                     <div className="flex -mx-3">
                       <div className="w-full px-3 mb-12">
-                        <label htmlFor="" className="text-xs font-semibold px-1">
+                        <label
+                          htmlFor=""
+                          className="text-xs font-semibold px-1"
+                        >
                           Gender
                         </label>
                         <div className="flex items-center mb-4">
@@ -348,9 +377,8 @@ const page = () => {
                     </div>
                     <div className="flex -mx-3">
                       <div className="w-full px-3 mb-5">
-                        <button className="block w-full max-w-xs mx-auto bg-green-500 hover:bg-green-700 focus:bg-green-700 text-white rounded-lg px-3 py-3 font-semibold">
-                          REGISTER NOW
-                        </button>
+                        <Link href='/'><button className="block w-full max-w-xs mx-auto my-2 bg-green-500 hover:bg-green-700 focus:bg-green-700 text-white rounded-lg px-3 py-3 font-semibold">Continue</button></Link>
+                        <Link href='/'><button className="md:hidden block w-full max-w-xs mx-auto my-2 bg-green-500 hover:bg-green-700 focus:bg-green-700 text-white rounded-lg px-3 py-3 font-semibold">Go Back</button></Link>
                       </div>
                     </div>
                   </form>
@@ -361,8 +389,7 @@ const page = () => {
         </div>
       </section>
     </>
+  );
+};
 
-  )
-}
-
-export default page
+export default page;
