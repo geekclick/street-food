@@ -11,7 +11,6 @@ WalkEat is a web platform that helps you find the finest street food vendors in 
   - [Prerequisites](#prerequisites)
   - [Getting Started](#getting-started)
     - [Installation](#installation)
-- [or](#or)
     - [Usage](#usage)
     - [Project Structure](#project-structure)
     - [License](#license)
@@ -85,3 +84,5 @@ next.config.js: Next.js configuration
 
 ### License
 WalkEat is licensed under the MIT License.
+
+[def]: #usage
