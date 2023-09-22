@@ -1,21 +1,24 @@
-# StreetEats - Discover the Best Street Food Near You
+# WalkEat - Explore the local delicacies
 
-StreetEats is a web platform that helps you find the finest street food vendors in your area, order delicious street food, rate your favorite dishes, and embark on a culinary journey to explore local delicacies.
+WalkEat is a web platform that helps you find the finest street food vendors in your area, order delicious street food, rate your favorite dishes, and embark on a culinary journey to explore local delicacies.
 
 ## Table of Contents
 
-- [Introduction](#introduction)
-- [Features](#features)
-- [Prerequisites](#prerequisites)
-- [Getting Started](#getting-started)
-  - [Installation](#installation)
-- [Usage](#usage)
-- [Project Structure](#project-structure)
-- [License](#license)
+- [WalkEat - Explore the local delicacies](#walkeat---explore-the-local-delicacies)
+  - [Table of Contents](#table-of-contents)
+  - [Introduction](#introduction)
+  - [Features](#features)
+  - [Prerequisites](#prerequisites)
+  - [Getting Started](#getting-started)
+    - [Installation](#installation)
+- [or](#or)
+    - [Usage](#usage)
+    - [Project Structure](#project-structure)
+    - [License](#license)
 
 ## Introduction
 
-StreetEats is your one-stop destination for discovering and enjoying street food. Whether you're a local foodie or a traveler looking to savor authentic local flavors, our platform connects you with the best street food vendors in your vicinity.
+WalkEat is your one-stop destination for discovering and enjoying street food. Whether you're a local foodie or a traveler looking to savor authentic local flavors, our platform connects you with the best street food vendors in your vicinity.
 
 ## Features
 
@@ -26,7 +29,7 @@ StreetEats is your one-stop destination for discovering and enjoying street food
 
 ## Prerequisites
 
-Before you get started with StreetEats, make sure you have the following prerequisites:
+Before you get started with WalkEat, make sure you have the following prerequisites:
 
 - Node.js (version)
 - npm or yarn (version)
@@ -35,7 +38,7 @@ Before you get started with StreetEats, make sure you have the following prerequ
 
 ## Getting Started
 
-Follow these steps to set up StreetEats on your local machine.
+Follow these steps to set up WalkEat on your local machine.
 
 ### Installation
 
@@ -57,8 +60,9 @@ Follow these steps to set up StreetEats on your local machine.
    ```bash
    npm run dev
 
-Usage
-Here's how you can make the most of StreetEats:
+
+### Usage
+Here's how you can make the most of WalkEat:
 
 1. Search for Street Food: Use the search feature to find street food vendors near your location.
 
@@ -69,15 +73,15 @@ Here's how you can make the most of StreetEats:
 4. Explore Local Delicacies: Dive into the world of local delicacies, try something new, and expand your culinary horizons.
 
 
-Project Structure
-The StreetEats project is organized as follows:
+### Project Structure
+The WalkEat project is organized as follows:
 
-/components: Reusable React components
-/public: Static assets
-/styles: CSS styles
-package.json: Project dependencies and scripts
+/components: Reusable React components\
+/public: Static assets\
+/styles: CSS styles\
+package.json: Project dependencies and scripts\
 next.config.js: Next.js configuration
 
 
-License
-StreetEats is licensed under the MIT License.
+### License
+WalkEat is licensed under the MIT License.
