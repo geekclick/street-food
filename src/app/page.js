@@ -1,8 +1,13 @@
 import React from 'react'
+import Hero from '@/components/Hero'
+import MapSection from '@/components/MapSection'
 
 const page = () => {
   return (
-    <div>Landing Page</div>
+    <>
+      <Hero/>
+      <MapSection/>
+    </>
   )
 }
 
