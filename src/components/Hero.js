@@ -49,44 +49,48 @@ const Hero = () => {
 
   return (
     <>
-      <section className="font-nunito bg-white py-8 smLan:py-96 lg:px-10 xl:px-96" id="home" style={{paddingLeft: '9%',paddingRight:'9%'}}>
-          <div className="lg:h-screen h-auto flex flex-col justify-center">
-            <Slider {...settings}>
-              {slides.map((slide) => (
-                <div className="slide flex items-center justify-center smLan:justify-normal flex-wrap gap-16 px-4 lg:pt-36 pt-16">
-                  <div className="lg:px-0 md:px-20" style={{ flex: "1 1" }}>
-                    <span className="text-hirwa font-light lg:text-4xl text-2xl">
-                      best food near you
-                    </span>
-                    <h3 className="text-kala lg:mt-8 my-2 mt-4 font-semibold lg:text-9xl text-7xl">
-                      {slide.title}
-                    </h3>
-                    <p className="text-light mb-16 lg:text-3xl text-xl py-2 px-0 leading-normal">
-                      {slide.desc}
-                    </p>
-                    <form action="">
-                      <div className="flex lg:flex-row flex-col gap-8 lg:gap-0 lg:border-2 pl-4 border-0 border-kala hover hover:border-hirwa rounded-lg w-full lg:max-w-3xl">
-                        <input
-                          className="w-full lg:text-3xl lg:border-0 text-2xl p-6 border-2 bg-white border-kala hover:border-hirwa  rounded-md"
-                          type="search"
-                          placeholder="Enter you location to find food"
-                        />
-                        <button
-                          className="inline-block lg:text-2xl text-xl text-white bg-kala hover:bg-hirwa cursor-pointer py-6 px-12 tracking-widest lg:rounded-none rounded-full"
-                          type="submit"
-                        >
-                          Search
-                        </button>
-                      </div>
-                    </form>
-                  </div>
-                  <div className="lg:w-1/2 w-full">
-                    <img src={slide.image} alt="" />
-                  </div>
+      <section
+        className="font-nunito bg-white py-8 smLan:py-96 lg:px-10 xl:px-40 mt-16"
+        id="home"
+        style={{ paddingLeft: "6%", paddingRight: "6%" }}
+      >
+        <div className=" lg:h-full h-auto flex flex-col justify-center">
+          <Slider {...settings}>
+            {slides.map((slide) => (
+              <div className="slide flex items-center justify-center smLan:justify-normal flex-wrap gap-8 lg:pt-0 lg:pt-16">
+                <div className="lg:px-0 md:px-20" style={{ flex: "1 1" }}>
+                  <span className="text-hirwa font-light lg:text-xl text-lg">
+                    best food near you
+                  </span>
+                  <h3 className="text-kala lg:mt-8 my-2 mt-4 font-semibold lg:text-6xl text-5xl">
+                    {slide.title}
+                  </h3>
+                  <p className="text-light mb-8 lg:text-lg text-md py-2 px-0 leading-normal">
+                    {slide.desc}
+                  </p>
+                  <form action="">
+                    <div className="flex lg:flex-row flex-col gap-6 lg:gap-0 lg:border-2 pl-4 border-0 border-kala hover hover:border-hirwa rounded-lg w-full lg:max-w-md">
+                      <input
+                        className="w-full lg:text-md lg:border-0 text-md p-4 border-2 bg-white border-kala hover:border-hirwa text-black rounded-md"
+                        type="search"
+                        placeholder="Enter you location to find food"
+                      />
+                      <button
+                        className="inline-block lg:text-md text-md text-white bg-kala hover:bg-hirwa cursor-pointer py-3 px-10 tracking-widest lg:rounded-none rounded-full"
+                        type="submit"
+                      >
+                        Search
+                      </button>
+                    </div>
+                  </form>
                 </div>
-              ))}
-            </Slider>
-          </div>
+                <div className="md:w-1/2 w-full">
+                  <img src={slide.image} alt="" />
+                </div>
+              </div>
+            ))}
+          </Slider>
+        </div>
       </section>
     </>
   );
