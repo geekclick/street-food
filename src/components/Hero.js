@@ -49,30 +49,30 @@ const Hero = () => {
 
   return (
     <>
-      <section className="font-nunito bg-white py-8 smLan:py-96" id="home" style={{paddingLeft: '9%',paddingRight:'9%'}}>
-          <div className="h-screen sm:h-auto flex flex-col justify-center">
+      <section className="font-nunito bg-white py-8 smLan:py-96 lg:px-10 xl:px-96" id="home" style={{paddingLeft: '9%',paddingRight:'9%'}}>
+          <div className="lg:h-screen h-auto flex flex-col justify-center">
             <Slider {...settings}>
               {slides.map((slide) => (
-                <div className="slide flex items-center justify-center smLan:justify-normal flex-wrap gap-16 px-4 pt-36 sm:pt-16">
-                  <div className="px-52 lg:px-0" style={{ flex: "1 1" }}>
-                    <span className="text-hirwa font-light text-4xl sm:text-2xl">
+                <div className="slide flex items-center justify-center smLan:justify-normal flex-wrap gap-16 px-4 lg:pt-36 pt-16">
+                  <div className="lg:px-0 md:px-20" style={{ flex: "1 1" }}>
+                    <span className="text-hirwa font-light lg:text-4xl text-2xl">
                       best food near you
                     </span>
-                    <h3 className="text-kala mt-8 my-2 sm:mt-4 font-semibold text-9xl sm:text-7xl">
+                    <h3 className="text-kala lg:mt-8 my-2 mt-4 font-semibold lg:text-9xl text-7xl">
                       {slide.title}
                     </h3>
-                    <p className="text-light mb-16 text-3xl sm:text-xl py-2 px-0 leading-normal">
+                    <p className="text-light mb-16 lg:text-3xl text-xl py-2 px-0 leading-normal">
                       {slide.desc}
                     </p>
                     <form action="">
-                      <div className="flex flex-row sm:flex-col gap-8 border-2 pl-4 sm:border-0 border-kala hover hover:border-hirwa rounded-lg w-full">
+                      <div className="flex lg:flex-row flex-col gap-8 lg:gap-0 lg:border-2 pl-4 border-0 border-kala hover hover:border-hirwa rounded-lg w-full lg:max-w-3xl">
                         <input
-                          className="w-full text-3xl border-0 sm:text-2xl sm:w-full sm:p-6 sm:border-2 bg-white border-kala hover:border-hirwa  rounded-md"
+                          className="w-full lg:text-3xl lg:border-0 text-2xl p-6 border-2 bg-white border-kala hover:border-hirwa  rounded-md"
                           type="search"
                           placeholder="Enter you location to find food"
                         />
                         <button
-                          className="inline-block text-2xl sm:text-xl text-white bg-kala hover:bg-hirwa cursor-pointer py-6 px-12 tracking-widest rounded-none sm:rounded-full"
+                          className="inline-block lg:text-2xl text-xl text-white bg-kala hover:bg-hirwa cursor-pointer py-6 px-12 tracking-widest lg:rounded-none rounded-full"
                           type="submit"
                         >
                           Search
@@ -80,7 +80,7 @@ const Hero = () => {
                       </div>
                     </form>
                   </div>
-                  <div className="w-1/2 lg:w-full">
+                  <div className="lg:w-1/2 w-full">
                     <img src={slide.image} alt="" />
                   </div>
                 </div>
