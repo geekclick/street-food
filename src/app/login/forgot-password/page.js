@@ -40,7 +40,7 @@ const page = () => {
     <>
       <section className="bg-login_bg w-full h-screen bg-cover z-0">
         <div className="bg-login_img md:bg-center lg:bg-cover w-1/2 h-screen bg-no-repeat bg-blend-multiply z-10 hidden lg:block"></div>
-        <div className="bg-black opacity-80 h-screen w-full z-20 flex flex-1 absolute top-0">
+        <div className="md:bg-black md:opacity-80 h-screen w-full z-20 flex flex-1 absolute top-0">
           <div className="lg:w-1/2 w-full h-screen flex justify-center items-center absolute right-0 z-30">
             <div className="bg-white lg:w-96 lg:h-96 w-full h-full rounded-none lg:rounded-3xl">
               <h1 className="text-center lg:text-2xl text-xl font-bold text-white bg-hirwa p-10 px-4 lg:static fixed top-0 w-full lg:rounded-t-3xl rounded-none">

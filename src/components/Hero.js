@@ -76,7 +76,7 @@ const Hero = () => {
                         placeholder="Enter you location to find food"
                       />
                       <button
-                        className="inline-block lg:text-md text-md text-white bg-kala hover:bg-hirwa cursor-pointer py-3 px-10 tracking-widest lg:rounded-none rounded-full"
+                        className="inline-block lg:text-md text-md text-white bg-hirwa hover:bg-kala cursor-pointer py-3 px-10 tracking-widest lg:rounded-none rounded-full"
                         type="submit"
                       >
                         Search

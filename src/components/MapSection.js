@@ -3,7 +3,7 @@ import React from "react";
 const MapSection = () => {
   return (
     <>
-      <section className="bg-bhurka lg:p-28 p-8 flex flex-col gap-10 items-center text-center w-full">
+      <section className="bg-white lg:p-28 p-8 flex flex-col gap-10 items-center text-center w-full">
         <div className="p-4 flex justify-center flex-col">
           <h3 className="text-kala lg:mt-8 my-2 mt-4 font-semibold lg:text-5xl text-3xl">
             street food near you
@@ -19,7 +19,7 @@ const MapSection = () => {
                 placeholder="Enter you location"
               />
               <button
-                className="inline-block lg:w-1/2 w-full lg:my-0 mt-4 mb-0 lg:text-lg text-md text-white bg-kala hover:bg-hirwa cursor-pointer py-3 px-12 tracking-widest lg:rounded-none rounded-full"
+                className="inline-block lg:w-1/2 w-full lg:my-0 mt-4 mb-0 lg:text-lg text-md text-white bg-hirwa hover:bg-kala cursor-pointer py-3 px-12 tracking-widest lg:rounded-none rounded-full"
                 type="submit"
               >
                 Find Now

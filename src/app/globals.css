@@ -16,3 +16,15 @@ html{
     scroll-padding-top: 5.5rem;
     scroll-padding: smooth;
 }
+
+.menuItems{
+    transform: translateX(0);
+    transition: 0.3s ease-in-out;   
+    background-color: #111111fa;
+    color: #818181;
+}
+
+.hide{
+    display: block;
+    transform: translateX(-100%);
+}

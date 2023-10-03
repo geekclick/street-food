@@ -37,7 +37,7 @@ const page = () => {
     <>
       <section className="bg-login_bg w-full h-screen bg-cover z-0">
         <div className="bg-login_img xl:bg-cover lg:bg-center w-1/2 h-screen bg-no-repeat bg-blend-multiply z-10 hidden lg:block"></div>
-        <div className="bg-black opacity-80 h-screen w-full z-20 flex flex-1 absolute top-0">
+        <div className="md:bg-black md:opacity-80 h-screen w-full z-20 flex flex-1 absolute top-0">
           <div className="lg:w-1/2 lg:h-screen h-full w-full flex justify-center items-center absolute right-0 z-30">
             <div className="bg-white lg:w-96 lg:h-fit w-full h-full rounded-none lg:rounded-3xl">
               <h1 className="text-center lg:text-3xl text-2xl font-bold text-white bg-hirwa p-8 lg:static fixed top-0 w-full lg:rounded-t-3xl rounded-none">
