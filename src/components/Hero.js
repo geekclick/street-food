@@ -56,8 +56,8 @@ const Hero = () => {
       >
         <div className=" lg:h-full h-auto flex flex-col justify-center">
           <Slider {...settings}>
-            {slides.map((slide) => (
-              <div className="slide flex items-center justify-center smLan:justify-normal flex-wrap gap-8 lg:pt-0 lg:pt-16">
+            {slides.map((slide, index) => (
+              <div key={index} className="slide flex items-center justify-center smLan:justify-normal flex-wrap gap-8 lg:pt-0">
                 <div className="lg:px-0 md:px-20" style={{ flex: "1 1" }}>
                   <span className="text-hirwa font-light lg:text-xl text-lg">
                     best food near you
