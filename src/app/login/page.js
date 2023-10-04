@@ -2,7 +2,7 @@
 import Link from "next/link";
 import React, { useState, useEffect } from "react";
 
-const page = () => {
+const Page = () => {
   const [input, setInput] = useState({ type: "text", label: "Username" });
   const [password, showPassword] = useState({
     type: "password",
@@ -164,4 +164,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;

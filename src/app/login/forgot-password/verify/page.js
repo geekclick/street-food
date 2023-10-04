@@ -2,7 +2,7 @@
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
 
-const page = () => {
+const Page = () => {
   const [inputValue, setInputValue] = useState("");
 
   const handleInputChange = (event) => {
@@ -68,4 +68,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;

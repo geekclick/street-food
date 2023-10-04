@@ -1,7 +1,7 @@
 "use client";
 import React, { useState, useEffect } from "react";
 
-const page = () => {
+const Page = () => {
   const [newPass, setNewpass] = useState("");
   const [confirmPass, setConfirmPass] = useState();
   const [showAlert, setShowAlert] = useState(false);
@@ -105,4 +105,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;

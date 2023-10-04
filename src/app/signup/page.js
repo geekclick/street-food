@@ -2,7 +2,7 @@
 import Link from "next/link";
 import React, { useState, useEffect } from "react";
 
-const page = () => {
+const Page = () => {
   const [loginMethod, setLoginMethod] = useState(false);
   const [newPass, setNewpass] = useState("");
   const [confirmPass, setConfirmPass] = useState();
@@ -265,4 +265,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;

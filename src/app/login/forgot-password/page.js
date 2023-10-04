@@ -1,7 +1,7 @@
 "use client";
 import React, { useState, useEffect } from "react";
 
-const page = () => {
+const Page = () => {
   const [alertMessage, setAlertMessage] = useState(false);
   const [input, setInput] = useState({
     type: "number",
@@ -108,4 +108,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;
