@@ -1,4 +1,5 @@
 import Footer from "@/components/Footer";
+import Link from "next/link";
 import React from "react";
 
 const Page = () => {
@@ -23,7 +24,7 @@ const Page = () => {
                     type="number"
                     placeholder="+91 "
                     name="phone_number"
-                    className="w-full rounded border bg-gray-50 px-3 py-2 text-gray-800 outline-none ring-indigo-300 transition duration-100 focus:ring"
+                    className="w-full rounded border bg-gray-50 px-3 py-2 text-gray-800 outline-none ring-teal-300 transition duration-100 focus:ring"
                   />
                 </div>
                 <div>
@@ -37,7 +38,7 @@ const Page = () => {
                     type="password"
                     placeholder="********"
                     name="password"
-                    className="w-full rounded border bg-gray-50 px-3 py-2 text-gray-800 outline-none ring-indigo-300 transition duration-100 focus:ring"
+                    className="w-full rounded border bg-gray-50 px-3 py-2 text-gray-800 outline-none ring-teal-300 transition duration-100 focus:ring"
                   />
                 </div>
                 <button className="block rounded-lg bg-gray-800 px-8 py-3 text-center text-sm font-semibold text-white outline-none ring-gray-300 transition duration-100 hover:bg-gray-700 focus-visible:ring active:bg-gray-600 md:text-base">
@@ -49,7 +50,7 @@ const Page = () => {
                     Sign in with social
                   </span>
                 </div>
-                <button className="flex items-center justify-center gap-2 rounded-lg bg-teal-700 px-8 py-3 text-center text-sm font-semibold text-white outline-none ring-blue-300 transition duration-100 hover:bg-teal-800 focus-visible:ring active:bg-blue-700 md:text-base">
+                <button className="flex items-center justify-center gap-2 rounded-lg bg-teal-700 px-8 py-3 text-center text-sm font-semibold text-white outline-none ring-blue-300 transition duration-100 hover:bg-teal-800 focus-visible:ring active:bg-teal-800 md:text-base">
                   <svg
                     className="h-5 w-5 shrink-0 bg-white p-0.5 rounded-sm"
                     width={24}
@@ -95,7 +96,7 @@ const Page = () => {
                   Don't have an account?{" "}
                   <a
                     href="#"
-                    className="text-indigo-500 transition duration-100 hover:text-indigo-600 active:text-indigo-700"
+                    className="text-blue-500 transition duration-100 hover:text-teal-600 active:text-kala"
                   >
                     Register
                   </a>
@@ -105,9 +106,47 @@ const Page = () => {
           </div>
         </div>
       </section>
-      <section className="md:hidden">
-      <Footer/>
-      </section>
+      <footer className="w-full bg-gray-100 py-8 md:hidden">
+        <div className="md:px-12 lg:px-28">
+          <Link
+            href="/"
+            className="flex flex-row gap-2 m-auto justify-center items-center"
+          >
+            <img src="logo.png" alt="logo tailus" className="h-8" />
+            <h1 className="text-2xl font-bold text-blue-950 font-ubuntu">
+              WalkEat
+            </h1>
+          </Link>
+          <div className="container m-auto space-y-0 text-gray-600">
+            <ul
+              role="list"
+              className="flex flex-row items-center justify-center gap-4 py-4"
+            >
+              <li role="listitem">
+                <a href="#" className="hover:text-primary">
+                  Home
+                </a>
+              </li>
+              <li role="listitem">
+                <a href="#" className="hover:text-primary">
+                  About Us
+                </a>
+              </li>
+              <li role="listitem">
+                <a href="#" className="hover:text-primary">
+                  Contact Us
+                </a>
+              </li>
+            </ul>
+
+            <div className="text-center">
+              <span className="text-sm tracking-wide">
+                Copyright © walkeat <span id="year" /> | All right reserved
+              </span>
+            </div>
+          </div>
+        </div>
+      </footer>
     </>
   );
 };
