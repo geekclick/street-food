@@ -92,7 +92,7 @@ const Page = () => {
               </div>
               <div className="flex items-center justify-center bg-gray-100 p-4 rounded-b-lg">
                 <p className="text-center text-sm text-gray-500">
-                  Don't have an account?{" "}
+                  Don&apos;t have an account?{" "}
                   <a
                     href="/register"
                     className="text-blue-500 transition duration-100 hover:text-teal-600 active:text-kala"
@@ -140,7 +140,7 @@ const Page = () => {
 
             <div className="text-center">
               <span className="text-sm tracking-wide">
-                Copyright @walkeat <span id="year" /> | All right reserved
+                Copyright © walkeat <span id="year" /> | All right reserved
               </span>
             </div>
           </div>

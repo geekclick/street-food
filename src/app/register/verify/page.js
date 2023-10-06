@@ -68,7 +68,7 @@ const Page = () => {
                         </Link>
                       </div>
                       <div className="flex flex-row items-center justify-center text-center text-sm font-medium space-x-1 text-gray-500">
-                        <p>Didn't recieve code?</p>{" "}
+                        <p>Didn&apos;t recieve code?</p>{" "}
                         <a
                           className="flex flex-row items-center text-teal-600"
                           href="http://"
