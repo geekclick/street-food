@@ -21,7 +21,7 @@ const Page = () => {
                 <form action="reset-password/verify" className="space-y-8">
                   <div className="space-y-4">
                     <label htmlFor="username" className="text-gray-600 text-sm md:text-base">
-                      What's your phone number or email ?
+                      What&amp;s your phone number or email ?
                     </label>
                     <div className="relative flex items-center">
                       <svg
@@ -78,7 +78,7 @@ const Page = () => {
                     affiliates to the number provided.
                   </p>
                   <p className="border-t border-gray-100  pt-6 text-sm text-gray-500">
-                    Don't have an account ?{"  "}
+                    Don&amp;t have an account ?{"  "}
                     <Link href="/register" className="text-primary">
                       Sign up
                     </Link>
