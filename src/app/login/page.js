@@ -1,3 +1,4 @@
+import InputPhone from "@/components/InputPhone";
 import Link from "next/link";
 import React from "react";
 
@@ -10,7 +11,7 @@ const Page = () => {
             <h2 className="md:mt-0 my-4 text-center text-2xl font-bold text-gray-800 md:mb-8 lg:text-3xl">
               Sign in
             </h2>
-            <form className="mx-auto max-w-lg rounded-lg border">
+            <form action="/" className="mx-auto max-w-lg rounded-lg border">
               <div className="flex flex-col gap-4 p-4 md:p-8">
                 <div>
                   <label
@@ -19,12 +20,7 @@ const Page = () => {
                   >
                     Phone Number
                   </label>
-                  <input
-                    type="number"
-                    placeholder="+91 "
-                    name="phone_number"
-                    className="w-full rounded border bg-gray-50 px-3 py-2 text-gray-800 outline-none ring-teal-300 transition duration-100 focus:ring"
-                  />
+                  <InputPhone />
                 </div>
                 <div>
                   <label
@@ -37,10 +33,39 @@ const Page = () => {
                     type="password"
                     placeholder="********"
                     name="password"
+                    required
                     className="w-full rounded border bg-gray-50 px-3 py-2 text-gray-800 outline-none ring-teal-300 transition duration-100 focus:ring"
                   />
                 </div>
-                <button className="block rounded-lg bg-gray-800 px-8 py-3 text-center text-sm font-semibold text-white outline-none ring-gray-300 transition duration-100 hover:bg-gray-700 focus-visible:ring active:bg-gray-600 md:text-base">
+                <div className="flex items-center justify-between mb-2">
+                  <div className="flex items-center">
+                    <input
+                      id="remember-me"
+                      name="remember-me"
+                      type="checkbox"
+                      placeholder="Your password"
+                      className="w-4 h-4 text-blue-600 border-gray-200 rounded focus:ring-blue-500"
+                    />
+                    <label
+                      htmlFor="remember-me"
+                      className="block ml-2 text-sm text-neutral-600"
+                    >
+                      Remember me
+                    </label>
+                  </div>
+                  <div className="text-sm">
+                    <Link
+                      href="login/reset-password"
+                      className="text-blue-500 hover:text-blue-500"
+                    >
+                      Forgot your password?
+                    </Link>
+                  </div>
+                </div>
+                <button
+                  type="submit"
+                  className="block rounded-lg bg-gray-800 px-8 py-3 text-center text-sm font-semibold text-white outline-none ring-gray-300 transition duration-100 hover:bg-gray-700 focus-visible:ring active:bg-gray-600 md:text-base"
+                >
                   Sign in
                 </button>
                 <div className="relative flex items-center justify-center">
@@ -92,13 +117,13 @@ const Page = () => {
               </div>
               <div className="flex items-center justify-center bg-gray-100 p-4 rounded-b-lg">
                 <p className="text-center text-sm text-gray-500">
-                  Don&apos;t have an account?{" "}
-                  <a
+                  Don't have an account?{" "}
+                  <Link
                     href="/register"
                     className="text-blue-500 transition duration-100 hover:text-teal-600 active:text-kala"
                   >
                     Register
-                  </a>
+                  </Link>
                 </p>
               </div>
             </form>

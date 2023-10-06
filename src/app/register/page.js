@@ -1,7 +1,29 @@
+"use client";
+
 import Link from "next/link";
-import React from "react";
+import React, { useState } from "react";
+import InputPassword from "@/components/InputPassword";
 
 const Page = () => {
+  const [newPass, setNewpass] = useState("");
+  const [confirmPass, setConfirmPass] = useState();
+  const [showAlert, setShowAlert] = useState(false);
+
+  const handleNewpassChange = (event) => {
+    setNewpass(event.target.value);
+  };
+
+  const handleConfirmPassChange = (event) => {
+    setConfirmPass(event.target.value);
+  };
+  const handleSubmit = (event) => {
+    if (newPass != confirmPass) {
+      event.preventDefault();
+      setShowAlert(true);
+    } else {
+      setShowAlert(false);
+    }
+  };
   return (
     <>
       <section className="bg-white">
@@ -36,7 +58,10 @@ const Page = () => {
                 exploring now!
               </p>
 
-              <form action="#" className="mt-8 grid grid-cols-6 gap-6">
+              <form
+                action="register/verify"
+                className="mt-8 grid grid-cols-6 gap-6"
+              >
                 <div className="col-span-6 sm:col-span-3">
                   <label
                     htmlFor="FirstName"
@@ -97,13 +122,7 @@ const Page = () => {
                     Password
                   </label>
 
-                  <input
-                    required
-                    type="password"
-                    id="Password"
-                    name="password"
-                    className="mt-1 w-full rounded-md border-gray-200 bg-white text-lg p-2 border transition text-gray-700 shadow-sm"
-                  />
+                  <InputPassword isRequired={true} value={newPass} changeFunction={handleNewpassChange} />
                 </div>
 
                 <div className="col-span-6 sm:col-span-3">
@@ -113,16 +132,14 @@ const Page = () => {
                   >
                     Confirm Password
                   </label>
-
-                  <input
-                    required
-                    type="password"
-                    id="PasswordConfirmation"
-                    name="password_confirmation"
-                    className="mt-1 w-full rounded-md border-gray-200 bg-white text-lg p-2 border transition text-gray-700 shadow-sm"
-                  />
+                  <div></div>
+                  <InputPassword isRequired={true} value={confirmPass} changeFunction={handleConfirmPassChange}/>
                 </div>
-
+                {showAlert && (
+                  <div className="col-span-6 sm:col-span-3 w-fit text-red-500 font-bold lg:text-lg text-sm transition-all">
+                    Passwords do not match
+                  </div>
+                )}
                 <div className="col-span-6">
                   <label htmlFor="MarketingAccept" className="flex gap-4">
                     <input
@@ -154,12 +171,13 @@ const Page = () => {
                 </div>
 
                 <div className="col-span-6 sm:flex sm:items-center sm:gap-4">
-                  <Link
-                    href="register/verify"
+                  <button
+                    type="submit"
+                    onClick={handleSubmit}
                     className="inline-block shrink-0 rounded-md border font-bold border-teal-600 bg-teal-600 px-12 py-3 text-sm text-white transition hover:bg-transparent hover:text-teal-600 focus:outline-none focus:ring active:text-teal-500"
                   >
                     Create an account
-                  </Link>
+                  </button>
 
                   <p className="mt-4 text-sm text-gray-500 sm:mt-0">
                     Already have an account?{"  "}

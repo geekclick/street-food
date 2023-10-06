@@ -23,7 +23,7 @@ const Page = () => {
                 </div>
               </div>
               <div>
-                <form action="" method="post">
+                <form action="verify/new-password">
                   <div className="flex flex-col space-y-16">
                     <div className="flex flex-row items-center justify-between mx-auto w-full max-w-xs">
                       <InputOTP />
@@ -33,15 +33,15 @@ const Page = () => {
                     </div>
                     <div className="flex flex-col space-y-5">
                       <div>
-                        <Link
-                          href="/"
+                        <button
+                          type="submit"
                           className="flex flex-row items-center justify-center text-center w-full border rounded-xl outline-none py-5 bg-teal-700 border-none text-white text-sm font-bold shadow-sm"
                         >
                           Verify Account
-                        </Link>
+                        </button>
                       </div>
                       <div className="flex flex-row items-center justify-center text-center text-sm font-medium space-x-1 text-gray-500">
-                        <p>Didn&apos;t recieve code?</p>{" "}
+                        <p>Didn't recieve code?</p>{" "}
                         <a
                           className="flex flex-row items-center text-teal-600"
                           href="http://"
