@@ -117,7 +117,7 @@ const Page = () => {
               </div>
               <div className="flex items-center justify-center bg-gray-100 p-4 rounded-b-lg">
                 <p className="text-center text-sm text-gray-500">
-                  Don't have an account?{" "}
+                  Don&amp;t have an account?{" "}
                   <Link
                     href="/register"
                     className="text-blue-500 transition duration-100 hover:text-teal-600 active:text-kala"
