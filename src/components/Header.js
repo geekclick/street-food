@@ -17,7 +17,7 @@ const Header = () => {
           <div className="lg:hidden flex flex-row gap-2">
             <Link
               className="block px-4 py-2 mb-0 leading-loose text-xs text-center text-white font-semibold bg-hirwa hover:bg-kala  rounded-full"
-              href="/signup"
+              href="/register"
             >
               Resgister
             </Link>
@@ -149,7 +149,7 @@ const Header = () => {
           </Link>
           <Link
             className="hidden lg:inline-block py-2 px-6 bg-hirwa hover:bg-hirwa text-sm text-white font-bold rounded-xl transition duration-200"
-            href="/signup"
+            href="/register"
           >
             Resgister
           </Link>
@@ -234,7 +234,7 @@ const Header = () => {
               </Link>
               <Link
                 className="block px-4 py-3 mb-2 leading-loose text-xs text-center text-white font-semibold bg-hirwa hover:bg-kala  rounded-xl"
-                href="/signup"
+                href="/register"
               >
                 Resgister
               </Link>
