@@ -1,10 +1,23 @@
 "use client";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import DishCard from "./DishCard";
 
 const DishSection = () => {
-  const [windowSize, setWindowSize] = useState(window.innerWidth);
-  console.log(windowSize)
+  const [windowSize, setWindowSize] = useState(null);
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      setWindowSize(window.innerWidth);
+
+      const handleResize = () => {
+        setWindowSize(window.innerWidth);
+      };
+      window.addEventListener("resize", handleResize);
+
+      return () => {
+        window.removeEventListener("resize", handleResize);
+      };
+    }
+  }, []);
   return (
     <>
       <section className="bg-teal-600 text-black">
@@ -18,7 +31,7 @@ const DishSection = () => {
             <DishCard image="h1.png" />
             <DishCard image="h2.png" />
             <DishCard image="h3.png" />
-            {windowSize >= 1024 && (
+            {windowSize >= 768 && (
               <>
                 <DishCard image="h4.png" />
                 <DishCard image="h5.png" />
