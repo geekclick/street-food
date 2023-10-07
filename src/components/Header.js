@@ -12,7 +12,7 @@ const Header = () => {
       <section className="bg-hirwa fixed z-50 w-full top-0">
         <nav className="relative px-4 py-4 flex justify-between items-center bg-white">
           <Link className="text-3xl font-bold leading-none" href="/">
-            <img className="h-10" src="/logo.png" alt="logo here" />
+            <img className="h-10 absolute z-50 top-4 left-5" src="/logo.png" alt="logo here" />
           </Link>
           <div className="lg:hidden flex flex-row gap-2">
             <Link
@@ -160,10 +160,7 @@ const Header = () => {
           className={`fixed top-0 left-0 bottom-0 flex flex-col w-5/6 max-w-sm py-6 px-6 bg-white border-r overflow-y-auto ${showMenu}`}
         >
           <div className="flex items-center mb-8">
-            <Link className="mr-auto text-3xl font-bold leading-none" href="#">
-              <img className="h-10" src="/logo.png" alt="logo here" />
-            </Link>
-            <button className="navbar-close" onClick={handleClick}>
+            <button className="navbar-close absolute right-4 top-5" onClick={handleClick}>
               <svg
                 className="h-6 w-6 text-light cursor-pointer hover:text-gray-500"
                 xmlns="http://www.w3.org/2000/svg"
@@ -180,7 +177,7 @@ const Header = () => {
               </svg>
             </button>
           </div>
-          <div>
+          <div className="mt-8">
             <ul>
               <li className="mb-1">
                 <Link

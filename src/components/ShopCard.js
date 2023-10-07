@@ -1,16 +1,13 @@
 import Link from "next/link";
-import React from "react";
+import React, { useState } from "react";
+import HeartIcon from "./HeartIcon";
 
 const ShopCard = () => {
   return (
     <>
       <div className="relative flex flex-col md:flex-row md:space-x-5 space-y-3 md:space-y-0 rounded-xl shadow-lg p-3 max-w-x md:max-w-3xl mx-auto border border-white bg-white">
         <div className="w-full md:w-1/3 bg-white grid place-items-center">
-          <img
-            src="/shop.jpg"
-            alt="tailwind logo"
-            className="rounded-xl"
-          />
+          <img src="/shop.jpg" alt="tailwind logo" className="rounded-xl" />
         </div>
         <div className="w-full md:w-2/3 bg-white flex flex-col space-y-2 p-3">
           <div className="flex justify-between item-center">
@@ -31,19 +28,8 @@ const ShopCard = () => {
                 <span className="text-gray-500 font-normal">(76 reviews)</span>
               </p>
             </div>
-            <div className="">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="h-5 w-5 text-pink-500"
-                viewBox="0 0 20 20"
-                fill="currentColor"
-              >
-                <path
-                  fillRule="evenodd"
-                  d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z"
-                  clipRule="evenodd"
-                />
-              </svg>
+            <div className="w-5 h-5">
+              <HeartIcon scale="100" />
             </div>
             {/* <div className="bg-gray-200 px-3 py-1 rounded-full text-xs font-medium text-gray-800 hidden md:block">
               Superhost
@@ -53,7 +39,8 @@ const ShopCard = () => {
             Lorem ipsum dolor sit amet.
           </h3>
           <p className="md:text-lg text-gray-500 text-base">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores fugit quia ratione facere praesentium ex!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores
+            fugit quia ratione facere praesentium ex!
           </p>
           <Link
             href="#"

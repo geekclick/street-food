@@ -1,11 +1,12 @@
 import Link from "next/link";
-import React from "react";
+import React, { useState } from "react";
+import HeartIcon from "./HeartIcon";
 
 const DishCard = (props) => {
   return (
     <>
-      <div className="max-w-2xl mx-auto border-2 border-gray-50 rounded-md">
-        <div className="bg-white shadow-md max-w-sm h-full rounded-lg">
+      <div className="max-w-2xl mx-auto">
+        <div className="bg-white shadow-md max-w-sm h-full rounded-lg relative">
           <Link href="#">
             <img
               className="rounded-lg p-8 h-64"
@@ -13,6 +14,9 @@ const DishCard = (props) => {
               alt="product image"
             />
           </Link>
+          <div className="absolute top-4 right-5">
+            <HeartIcon scale="100" />
+          </div>
           <div className="px-5 pb-5">
             <a href="#">
               <h3 className="text-gray-900 font-semibold text-xl tracking-tight">
@@ -65,9 +69,7 @@ const DishCard = (props) => {
               </span>
             </div>
             <div className="flex items-end justify-between">
-              <span className="text-3xl font-bold text-gray-900">
-              ₹599
-              </span>
+              <span className="text-3xl font-bold text-gray-900">₹599</span>
               <Link
                 href="#"
                 className="text-white bg-teal-700 hover:bg-teal-800 focus:ring-4 focus:ring-blue-300 font-bold rounded-lg text-sm px-5 py-2.5 text-center"
