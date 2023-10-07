@@ -26,16 +26,6 @@ const Hero = () => {
       desc: "A classic fast-food item, a burger is a sandwich made with a ground meat or plant-based patty, typically served in a bun with various toppings.",
       image: "/hero/h6.png",
     },
-    {
-      title: "Vada Sambar",
-      desc: "A South Indian snack, vada is a deep-fried lentil-based fritter often served with a tangy and spicy sambar.",
-      image: "/hero/h7.png",
-    },
-    {
-      title: "Idli Sambar",
-      desc: "A South Indian breakfast staple, idli is a steamed rice cake served with flavorful and spicy lentil-based sambar.",
-      image: "/hero/h8.png",
-    },
   ];
   const settings = {
     dots: false,
@@ -50,17 +40,20 @@ const Hero = () => {
   return (
     <>
       <section
-        className="font-nunito bg-white py-8 smLan:py-96 lg:px-10 xl:px-40 mt-16"
+        className="font-nunito bg-white p-8 smLan:py-96 lg:px-10 xl:px-40 mt-16"
         id="home"
         style={{ paddingLeft: "6%", paddingRight: "6%" }}
       >
-        <div className=" lg:h-full h-auto flex flex-col justify-center">
+        <div className="lg:h-screen h-fit flex flex-col justify-center">
           <Slider {...settings}>
             {slides.map((slide, index) => (
-              <div key={index} className="slide flex items-center justify-center smLan:justify-normal flex-wrap gap-8 lg:pt-0">
+              <div
+                key={index}
+                className="slide flex items-center justify-center smLan:justify-normal flex-wrap gap-8 lg:pt-0"
+              >
                 <div className="lg:px-0 md:px-20" style={{ flex: "1 1" }}>
                   <span className="text-hirwa font-light lg:text-xl text-lg">
-                    best food near you
+                    Best Food Near You
                   </span>
                   <h3 className="text-kala lg:mt-8 my-2 mt-4 font-semibold lg:text-6xl text-5xl">
                     {slide.title}
@@ -73,7 +66,7 @@ const Hero = () => {
                       <input
                         className="w-full lg:text-md lg:border-0 text-md p-4 border-2 bg-white border-kala hover:border-hirwa text-black rounded-md"
                         type="search"
-                        placeholder="Enter you location to find food"
+                        placeholder="Enter your location to find food"
                       />
                       <button
                         className="inline-block lg:text-md text-md text-white bg-hirwa hover:bg-kala cursor-pointer py-3 px-10 tracking-widest lg:rounded-none rounded-full"

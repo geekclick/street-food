@@ -1,8 +1,37 @@
+"use client";
+import InputPassword from "@/components/InputPassword";
 import InputPhone from "@/components/InputPhone";
 import Link from "next/link";
-import React from "react";
+import React, { useState } from "react";
 
 const Page = () => {
+  const [mailtophone, setMailtophone] = useState({
+    label: "Phone Number",
+    inputType: "number",
+    btnText: "Email",
+    icon: "envelope",
+    placeholder: "+91 ",
+  });
+
+  const changeInput = () => {
+    if (mailtophone.inputType === "number") {
+      setMailtophone({
+        label: "Email/Username",
+        inputType: "email",
+        btnText: "Phone Number",
+        icon: "mobile-alt",
+        placeholder: "yourmail@gmail.com",
+      });
+    } else {
+      setMailtophone({
+        label: "Phone Number",
+        inputType: "number",
+        btnText: "Email",
+        icon: "envelope",
+        placeholder: "+91 ",
+      });
+    }
+  };
   return (
     <>
       <section className="bg-white md:bg-login md:bg-cover bg-contain bg-center md:h-screen w-full flex md:items-center justify-center">
@@ -11,16 +40,19 @@ const Page = () => {
             <h2 className="md:mt-0 my-4 text-center text-2xl font-bold text-gray-800 md:mb-8 lg:text-3xl">
               Sign in
             </h2>
-            <form action="/" className="mx-auto max-w-lg rounded-lg border">
+            <form action="/" className="mx-auto max-w-2xl rounded-lg border">
               <div className="flex flex-col gap-4 p-4 md:p-8">
                 <div>
                   <label
                     htmlFor="phone_number"
                     className="mb-2 inline-block text-sm text-gray-800 sm:text-base"
                   >
-                    Phone Number
+                    {mailtophone.label}
                   </label>
-                  <InputPhone />
+                  <InputPhone
+                    type={mailtophone.inputType}
+                    placeholder={mailtophone.placeholder}
+                  />
                 </div>
                 <div>
                   <label
@@ -29,13 +61,7 @@ const Page = () => {
                   >
                     Password
                   </label>
-                  <input
-                    type="password"
-                    placeholder="********"
-                    name="password"
-                    required
-                    className="w-full rounded border bg-gray-50 px-3 py-2 text-gray-800 outline-none ring-teal-300 transition duration-100 focus:ring"
-                  />
+                  <InputPassword isRequired={true} placeholder="********"/>
                 </div>
                 <div className="flex items-center justify-between mb-2">
                   <div className="flex items-center">
@@ -102,22 +128,19 @@ const Page = () => {
                   </svg>
                   Continue with Google
                 </button>
-                <button className="flex items-center justify-center gap-2 rounded-lg border border-gray-300 bg-white px-8 py-3 text-center text-sm font-semibold text-gray-800 outline-none ring-gray-300 transition duration-100 hover:bg-gray-100 focus-visible:ring active:bg-gray-200 md:text-base">
-                  <svg
-                    fill="dimgray"
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                  >
-                    <path d="M0 3v18h24v-18h-24zm6.623 7.929l-4.623 5.712v-9.458l4.623 3.746zm-4.141-5.929h19.035l-9.517 7.713-9.518-7.713zm5.694 7.188l3.824 3.099 3.83-3.104 5.612 6.817h-18.779l5.513-6.812zm9.208-1.264l4.616-3.741v9.348l-4.616-5.607z" />
-                  </svg>
-                  Continue with Email
+                <button
+                  onClick={changeInput}
+                  className="flex items-center justify-center gap-2 rounded-lg border border-gray-300 bg-white px-8 py-3 text-center text-sm font-semibold text-gray-800 outline-none ring-gray-300 transition duration-100 hover:bg-gray-100 focus-visible:ring active:bg-gray-200 md:text-base"
+                >
+                  <i
+                    className={`fa fa-${mailtophone.icon}  scale-125 mr-1" aria-hidden="true`}
+                  ></i>
+                  Continue with {mailtophone.btnText}
                 </button>
               </div>
               <div className="flex items-center justify-center bg-gray-100 p-4 rounded-b-lg">
                 <p className="text-center text-sm text-gray-500">
-                  Don&amp;t have an account?{" "}
+                  Don&apos;t have an account?{" "}
                   <Link
                     href="/register"
                     className="text-blue-500 transition duration-100 hover:text-teal-600 active:text-kala"

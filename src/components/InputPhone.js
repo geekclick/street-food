@@ -1,7 +1,7 @@
 "use client";
 import React, { useState, useEffect } from "react";
 
-const InputPhone = () => {
+const InputPhone = (props) => {
   const [inputValue, setInputValue] = useState("");
 
   const handleInputChange = (event) => {
@@ -20,8 +20,8 @@ const InputPhone = () => {
   return (
     <>
       <input
-        type="number"
-        placeholder="+91 "
+        type={props.type}
+        placeholder={props.placeholder}
         name="phone_number"
         required
         autoFocus
