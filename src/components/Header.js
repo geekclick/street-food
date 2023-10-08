@@ -12,12 +12,16 @@ const Header = () => {
       <section className="bg-hirwa fixed z-50 w-full top-0">
         <nav className="relative px-4 py-4 flex justify-between items-center bg-white">
           <Link className="text-3xl font-bold leading-none" href="/">
-            <img className="h-10 absolute z-50 top-4 left-5" src="/logo.png" alt="logo here" />
+            <img
+              className="h-10 absolute z-50 top-4 left-5"
+              src="/logo.png"
+              alt="logo here"
+            />
           </Link>
           <div className="lg:hidden flex flex-row gap-2">
             <Link
               className="block px-4 py-2 mb-0 leading-loose text-xs text-center text-white font-semibold bg-hirwa hover:bg-kala  rounded-full"
-              href="/register"
+              href="auth/register"
             >
               Resgister
             </Link>
@@ -143,13 +147,13 @@ const Header = () => {
           </ul>
           <Link
             className="hidden lg:inline-block lg:ml-auto lg:mr-3 py-2 px-6 bg-gray-50 hover:bg-gray-100 text-sm text-gray-900 font-bold  rounded-xl transition duration-200"
-            href="/login"
+            href="auth/login"
           >
             Sign In
           </Link>
           <Link
             className="hidden lg:inline-block py-2 px-6 bg-hirwa hover:bg-hirwa text-sm text-white font-bold rounded-xl transition duration-200"
-            href="/register"
+            href="auth/register"
           >
             Resgister
           </Link>
@@ -160,7 +164,10 @@ const Header = () => {
           className={`fixed top-0 left-0 bottom-0 flex flex-col w-5/6 max-w-sm py-6 px-6 bg-white border-r overflow-y-auto ${showMenu}`}
         >
           <div className="flex items-center mb-8">
-            <button className="navbar-close absolute right-4 top-5" onClick={handleClick}>
+            <button
+              className="navbar-close absolute right-4 top-5"
+              onClick={handleClick}
+            >
               <svg
                 className="h-6 w-6 text-light cursor-pointer hover:text-gray-500"
                 xmlns="http://www.w3.org/2000/svg"

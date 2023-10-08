@@ -59,7 +59,7 @@ const Page = () => {
               </p>
 
               <form
-                action="register/verify"
+                action="/auth/register/verify"
                 className="mt-8 grid grid-cols-6 gap-6"
               >
                 <div className="col-span-6 sm:col-span-3">
@@ -182,7 +182,7 @@ const Page = () => {
                   <p className="mt-4 text-sm text-gray-500 sm:mt-0">
                     Already have an account?{"  "}
                     <Link
-                      href="/login"
+                      href="/auth/login"
                       className="text-gray-700 underline font-bold"
                     >
                       Log in

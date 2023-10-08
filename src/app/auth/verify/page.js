@@ -23,7 +23,7 @@ const Page = () => {
                 </div>
               </div>
               <div>
-                <form action="verify/new-password">
+                <form action="/auth/new-password">
                   <div className="flex flex-col space-y-16">
                     <div className="flex flex-row items-center justify-between mx-auto w-full max-w-xs">
                       <InputOTP />

@@ -18,7 +18,7 @@ const Page = () => {
                 <h2 className="mt-20 mb-8 text-2xl font-bold text-gray-800">
                   Enter your registered Mobile Number / Email
                 </h2>
-                <form action="reset-password/verify" className="space-y-8">
+                <form action="/auth/verify" className="space-y-8">
                   <div className="space-y-4">
                     <label htmlFor="username" className="text-gray-600 text-sm md:text-base">
                       What&apos;s your phone number or email ?
@@ -79,7 +79,7 @@ const Page = () => {
                   </p>
                   <p className="border-t border-gray-100  pt-6 text-sm text-gray-500">
                     Don&apos;t have an account ?{"  "}
-                    <Link href="/register" className="text-primary">
+                    <Link href="/auth/register" className="text-primary">
                       Sign up
                     </Link>
                   </p>

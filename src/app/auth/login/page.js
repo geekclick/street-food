@@ -81,7 +81,7 @@ const Page = () => {
                   </div>
                   <div className="text-sm">
                     <Link
-                      href="login/reset-password"
+                      href="/auth/reset-password"
                       className="text-blue-500 hover:text-blue-500"
                     >
                       Forgot your password?
@@ -142,7 +142,7 @@ const Page = () => {
                 <p className="text-center text-sm text-gray-500">
                   Don&apos;t have an account?{" "}
                   <Link
-                    href="/register"
+                    href="/auth/register"
                     className="text-blue-500 transition duration-100 hover:text-teal-600 active:text-kala"
                   >
                     Register
